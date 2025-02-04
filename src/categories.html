@@ -1,0 +1,14 @@
+<h1> Food Categories</h1>  
+
+      <br><br><h2> Please choose the food category which you like</h2>   
+  <div>   
+     <ul ng-repeat='category in rctrl.Categories'>   
+     <a ui-sref='FoodItems({catid:$index})'  ><li class='li' id = {{category.id}} >   
+
+    {{category.name}} <br><br>   
+    <img src = '{{category.imagePath}}' />  
+      <br><br><br>   
+     </a>  
+      </li>   
+     </ul>   
+  </div>  
